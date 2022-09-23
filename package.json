@@ -1,0 +1,30 @@
+{
+  "name": "hardhat-nfts",
+  "version": "1.0.0",
+  "description": "nfts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sachinkry/hardhat-nfts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sachinkry/hardhat-nfts/issues"
+  },
+  "homepage": "https://github.com/Sachinkry/hardhat-nfts#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "chai": "^4.3.6",
+    "hardhat": "^2.11.2"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.1",
+    "@openzeppelin/contracts": "^4.7.3",
+    "dotenv": "^16.0.2"
+  }
+}
