@@ -14,7 +14,7 @@ error RandomIpfsNft__TransferFailed();
 contract RandomIpfsNFT is VRFConsumerBaseV2, ERC721URIStorage, Ownable {
     // when we mint an NFT, we would request chainlink vrf to get us a random number
     // using that randNum to provide randomNFT
-    // Pug, Shiba, St. bernan
+    // Pug, Shiba, St. Bernard
     // Pug super rare
     // Shiba sort of rare
     // St. bernan common
@@ -30,8 +30,11 @@ contract RandomIpfsNFT is VRFConsumerBaseV2, ERC721URIStorage, Ownable {
     }
 
     // Chainlink VRF Variables
+    // crearte an instance of VRFCoordinatorV2Interface
     VRFCoordinatorV2Interface private immutable i_vrfCoordinator;
+    //  your chainlink subscriptionId
     uint64 private immutable i_subscriptionId;
+    // Id of the public key against which the randomness is generated
     bytes32 private immutable i_gasLane;
     uint32 private immutable i_callBackGasLimit;
     uint16 private constant REQUEST_CONFIRMATIONS = 3;
